@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "**/.*",
+      "**/node_modules/**",
+      "*.bat",
+      "serve.js",
+      ".vscode/**",
+      ".claude/**"
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
+  }
+}

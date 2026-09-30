@@ -1,0 +1,12 @@
+# Firebase cache e logs
+.firebase/
+
+# VS Code
+.vscode/
+
+# Node
+node_modules/
+
+# Ficheiros de ambiente
+.env
+.env.local

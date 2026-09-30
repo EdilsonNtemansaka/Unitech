@@ -1,0 +1,655 @@
+﻿<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Unitech Solution — Tecnologia, Software &amp; Segurança em Maputo, Moçambique</title>
+  <meta name="description"
+    content="Unitech Solution — where wisdom meets innovation. Desenvolvimento de software, redes e servidores, segurança electrónica e consultoria em TI, em Maputo, Moçambique.">
+  <meta name="theme-color" content="#04255C">
+  <link rel="icon" href="assets/img/favicon.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <img class="preloader__logo" id="preloaderLogo" src="assets/img/logo.png" alt="">
+    <div class="preloader__marquee">
+      <div class="preloader__track" id="preloaderTrack">
+        <span>UNITECH SOLUTION &nbsp;&#183;&nbsp; WHERE WISDOM MEETS INNOVATION &nbsp;&#183;&nbsp; </span>
+      </div>
+    </div>
+    <div class="preloader__counter"><span id="preloaderCount">0</span><em>%</em></div>
+    <div class="preloader__curtain" id="preloaderCurtain"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#main-content" aria-label="Unitech Solution, voltar ao topo">
+      <img class="nav__mark-logo" src="assets/img/logo.png" alt="Unitech Solution">
+    </a>
+    <nav class="nav__links" aria-label="Navegação principal">
+      <a href="#projetos">Projectos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <a class="nav__cta" href="#contacto">
+      <span class="nav__cta-dot"></span>Iniciar um projecto
+    </a>
+    <button class="nav__burger" id="navBurger" type="button" aria-label="Abrir menu" aria-expanded="false"
+      aria-controls="mobileMenu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="mnav" id="mobileMenu" aria-hidden="true">
+    <p class="mnav__label">(Menu)</p>
+    <nav class="mnav__links" aria-label="Navegação móvel">
+      <a href="#projetos" style="--i:0"><i>01</i>Projectos</a>
+      <a href="#servicos" style="--i:1"><i>02</i>Serviços</a>
+      <a href="#sobre" style="--i:2"><i>03</i>Sobre</a>
+      <a href="#contacto" style="--i:3"><i>04</i>Iniciar um projecto</a>
+    </nav>
+    <p class="mnav__foot">
+      <span>Unitech Solution &#183; Maputo, Moçambique</span>
+      <a href="mailto:comercial@unitechsolution.co.mz">comercial@unitechsolution.co.mz</a>
+    </p>
+  </div>
+
+  <main id="main-content" role="main">
+    <section class="hero" id="hero">
+      <canvas class="hero__canvas" id="logoCanvas" aria-hidden="true"></canvas>
+      <div class="hero__inner">
+        <h1 class="hero__title">
+          <span class="sr-only">Unitech Solution — tecnologia, software e segurança em Maputo, Moçambique</span>
+          <span class="hero__line hero__line--grotesk" data-split>Where wisdom</span>
+          <span class="hero__line hero__line--serif" data-split>meets innovation</span>
+        </h1>
+        <div class="hero__aside">
+          <p class="hero__desc" data-reveal>
+            Bem-vindo à Unitech Solution: a sua empresa de tecnologia em Moçambique, com foco em Machine Learning e
+            Inteligência Artificial. Software, redes, segurança e consultoria — tudo sob o mesmo teto.
+          </p>
+          <ul class="hero__index">
+            <li><a href="#projetos"><i>01</i>Uniticket</a></li>
+            <li><a href="#projetos"><i>02</i>Unitech Workflow</a></li>
+            <li><a href="#projetos"><i>03</i>Malachi Plant Identifier</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="hero__marquee-track" id="heroMarquee">
+          <span>unitech<span>solution</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto" id="sobre">
+      <div class="manifesto__rail">
+        <p class="manifesto__label">(A empresa)</p>
+        <div class="manifesto__stats">
+          <div class="manifesto__stat" data-reveal>
+            <strong>3</strong>
+            <span>especialidades sob o mesmo teto: software, redes &amp; segurança, consultoria</span>
+          </div>
+          <div class="manifesto__stat" data-reveal>
+            <strong>100%</strong>
+            <span>soluções pensadas à medida do seu negócio</span>
+          </div>
+        </div>
+      </div>
+      <div class="manifesto__body">
+        <p class="manifesto__text" id="manifestoText">
+          Solução completa em tecnologia, com foco em Machine Learning e Inteligência Artificial.
+        </p>
+        <p class="manifesto__sub" data-reveal>
+          Somos especializados em desenvolvimento de software, aplicativos mobile, montagem de redes e servidores,
+          instalação de vedação eléctrica, câmaras de segurança e motores de portão.
+        </p>
+      </div>
+    </section>
+
+    <section class="strip" id="projetos" aria-labelledby="stripTitle" data-strip-carousel>
+      <div class="strip__pin">
+        <header class="strip__head">
+          <p class="strip__eyebrow"><span>02</span><span>Projectos em destaque</span></p>
+          <h2 class="strip__title" id="stripTitle">
+            <span>Prova,</span>
+            <em>não promessa.</em>
+          </h2>
+          <div class="strip__intro">
+            <p>Produtos reais, que desenvolvemos do zero para resolver desafios concretos em Moçambique.</p>
+            <span aria-hidden="true">&#8600;</span>
+          </div>
+        </header>
+        <div class="strip__viewport">
+          <div class="strip__rail" aria-label="14 projectos seleccionados">
+            <a class="strip-card strip-card--portrait" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/yentelelo.png" alt="Painel administrativo Yentelelo" loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>01</span>Yentelelo</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--wide" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--placeholder">
+                  <span class="strip-card__mono">EM</span>
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>02</span>Eml</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--landscape" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--placeholder">
+                  <span class="strip-card__mono">FMF</span>
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>03</span>FMF</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--square" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/fundacao-cantona.png" alt="Website da Fundação Cantoná" loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>04</span>Fundação Cantoná</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--tall" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/kombela.png" alt="Aplicativo Kombela — ecrãs de pagamento e serviços"
+                    loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>05</span>Kombela</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--portrait" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/pro-seguros.png" alt="Website Pro Seguros — seguro automóvel " loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>06</span>Pro Seguros</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--wide" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/viva-sem-medo.png" alt="Aplicativo Ganha Mais — seguro automóvel e funeral"
+                    loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>07</span>Ganha Mais</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--landscape"
+              href="https://play.google.com/store/apps/details?id=com.uniticket.app" target="_blank" rel="noopener">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/uniticket-mockup.png"
+                    alt="Aplicativo Uniticket — compra de bilhetes de transporte distrital e provincial" loading="lazy">
+                  <span class="strip-card__open">Ver no Play Store <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>08</span>Uniticket</p>
+                  <p>Aplicativo móvel &#183; Transporte</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--square" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/uniticket-painel-mockup.png"
+                    alt="Painel administrativo Uniticket — gestão de rotas, cobradores e vendas" loading="lazy">
+                  <span class="strip-card__open">Pedir demonstração <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>09</span>Uniticket &#183; Painel</p>
+                  <p>Plataforma web &#183; Gestão</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--tall" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/unitech-workflow-mockup.png"
+                    alt="Unitech Workflow — sistema de automação de requisições, aprovações e facturação"
+                    loading="lazy">
+                  <span class="strip-card__open">Pedir demonstração <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>10</span>Unitech Workflow</p>
+                  <p>Automação &#183; Gestão interna</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--portrait"
+              href="https://play.google.com/store/apps/details?id=com.mycompany.malachiapp01" target="_blank"
+              rel="noopener">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/malachi-mockup.png"
+                    alt="Malachi Plant Identifier — identificação de plantas e diagnóstico de doenças por IA"
+                    loading="lazy">
+                  <span class="strip-card__open">Ver no Play Store <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>11</span>Malachi Plant Identifier</p>
+                  <p>Aplicativo móvel &#183; Inteligência Artificial</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--wide" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/dfs-crm.png" alt="DFS CRM — painel de gestão empresarial" loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>12</span>DFS CRM</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--landscape" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/flexpress-mockup.png" alt="Aplicativo Flexpress — rotas de entrega optimizadas"
+                    loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>13</span>Flexpress</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+            <a class="strip-card strip-card--square" href="#contacto">
+              <div class="strip-card__float">
+                <figure class="strip-card__media strip-card__media--mockup">
+                  <img src="assets/img/lacos-corretora.png" alt="Website Laços Corretora — seguro automóvel"
+                    loading="lazy">
+                  <span class="strip-card__open">Saber mais <i>&#8599;</i></span>
+                </figure>
+                <div class="strip-card__meta">
+                  <p><span>14</span>Laços Corretora</p>
+                  <p>Descrição a adicionar</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <p class="strip__progress" aria-hidden="true">
+          <span id="stripCurrent">01</span><span>/</span><span id="stripTotal">14</span>
+        </p>
+      </div>
+      <footer class="strip__foot">
+        <p>Selecção de projectos &#183; 14</p>
+        <div class="works__more">
+          <a href="#contacto">Falar sobre o seu projecto</a>
+        </div>
+      </footer>
+    </section>
+
+    <section class="process" id="metodologia" aria-labelledby="processTitle">
+      <div class="process__head">
+        <div class="process__head-top">
+          <p class="process__eyebrow"><span>03</span><span>Como trabalhamos</span></p>
+          <p class="process__promise">Um processo claro, do primeiro contacto à entrega final.</p>
+        </div>
+        <h2 class="process__title" id="processTitle">
+          <span class="process__title-serif">A</span>
+          <span class="process__title-main">Metodologia</span>
+        </h2>
+        <div class="process__head-bottom">
+          <p class="process__sub"><span>Quatro etapas.</span> <em>Sem atalhos.</em></p>
+          <p class="process__scroll" aria-hidden="true">Continue a percorrer <span>&#8595;</span></p>
+        </div>
+        <ol class="process__legend" aria-label="As etapas da metodologia">
+          <li><span>01</span>Ouvir</li>
+          <li><span>02</span>Desenhar</li>
+          <li><span>03</span>Construir</li>
+          <li><span>04</span>Entregar</li>
+        </ol>
+      </div>
+      <div class="process__cards" id="processCards">
+        <article class="process-card">
+          <div class="process-card__shade" aria-hidden="true"></div>
+          <div class="process-card__inner">
+            <p class="process-card__index"><span class="process-card__num">01</span><span
+                class="process-card__phase">Imersão</span></p>
+            <div class="process-card__body">
+              <h3 class="process-card__name">Ouvir</h3>
+              <p class="process-card__text">Mergulhamos no seu negócio, nos seus clientes e nos seus desafios. Não
+                desenhamos nada sem perceber primeiro o que o torna diferente.</p>
+              <p class="process-card__meta">Briefing &#183; Levantamento &#183; Auditoria</p>
+            </div>
+            <div class="process-card__visual">
+              <div class="process-card__visual-img" style="background-image:url('assets/img/ouvir.jpg')"></div>
+            </div>
+            <span class="process-card__ghost" aria-hidden="true">01</span>
+          </div>
+        </article>
+        <article class="process-card">
+          <div class="process-card__shade" aria-hidden="true"></div>
+          <div class="process-card__inner">
+            <p class="process-card__index"><span class="process-card__num">02</span><span
+                class="process-card__phase">Direcção</span></p>
+            <div class="process-card__body">
+              <h3 class="process-card__name">Desenhar</h3>
+              <p class="process-card__text">Definimos a arquitectura certa para a solução — seja um software, uma rede
+                ou um sistema de segurança — antes de escrever a primeira linha de código.</p>
+              <p class="process-card__meta">Arquitectura &#183; Planeamento &#183; Protótipos</p>
+            </div>
+            <div class="process-card__visual">
+              <div class="process-card__visual-img" style="background-image:url('assets/img/desenhar.jpg')"></div>
+            </div>
+            <span class="process-card__ghost" aria-hidden="true">02</span>
+          </div>
+        </article>
+        <article class="process-card">
+          <div class="process-card__shade" aria-hidden="true"></div>
+          <div class="process-card__inner">
+            <p class="process-card__index"><span class="process-card__num">03</span><span
+                class="process-card__phase">Produção</span></p>
+            <div class="process-card__body">
+              <h3 class="process-card__name">Construir</h3>
+              <p class="process-card__text">Desenvolvemos e implementamos com tecnologias robustas: do código à
+                instalação física de redes, câmaras e automatismos.</p>
+              <p class="process-card__meta">Desenvolvimento &#183; Infraestrutura &#183; Testes</p>
+            </div>
+            <div class="process-card__visual">
+              <div class="process-card__visual-img" style="background-image:url('assets/img/construir.jpg')"></div>
+            </div>
+            <span class="process-card__ghost" aria-hidden="true">03</span>
+          </div>
+        </article>
+        <article class="process-card">
+          <div class="process-card__shade" aria-hidden="true"></div>
+          <div class="process-card__inner">
+            <p class="process-card__index"><span class="process-card__num">04</span><span
+                class="process-card__phase">Lançamento</span></p>
+            <div class="process-card__body">
+              <h3 class="process-card__name">Entregar</h3>
+              <p class="process-card__text">Colocamos a solução em produção, formamos a sua equipa e continuamos
+                disponíveis para suporte técnico e evolução contínua.</p>
+              <p class="process-card__meta">Implementação &#183; Formação &#183; Suporte</p>
+            </div>
+            <div class="process-card__visual">
+              <div class="process-card__visual-img" style="background-image:url('assets/img/entregar.jpg')"></div>
+            </div>
+            <span class="process-card__ghost" aria-hidden="true">04</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services" id="servicos" aria-labelledby="servicesTitle">
+      <div class="services__head">
+        <p class="services__eyebrow"><span>04</span><span>O que fazemos</span></p>
+        <h2 class="services__title" id="servicesTitle">
+          <span class="line"><span class="services__title-main">Serviços</span></span>
+          <em class="line"><span class="services__title-sub">do software ao terreno</span></em>
+        </h2>
+        <p class="services__promise" data-reveal>Cinco frentes de trabalho, um único parceiro. Passe o rato sobre cada
+          serviço para ver o que inclui.</p>
+      </div>
+      <div class="services__left">
+        <ul class="services__list" id="servicesList">
+          <li class="services__item is-active" data-tags="Sistemas de gestão|Aplicativos mobile|Soluções sob medida">
+            <a class="services__link" href="#contacto">
+              <span class="services__num">01</span>
+              <span class="services__body">
+                <span class="services__name">Desenvolvimento de software</span>
+                <span class="services__meta">Sistemas de gestão, aplicativos mobile e soluções sob medida</span>
+              </span>
+              <span class="services__arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+          <li class="services__item" data-tags="Infra-estrutura de TI|Redes seguras|Servidores">
+            <a class="services__link" href="#contacto">
+              <span class="services__num">02</span>
+              <span class="services__body">
+                <span class="services__name">Redes &amp; servidores</span>
+                <span class="services__meta">Infra-estrutura de TI segura e eficiente para o seu negócio</span>
+              </span>
+              <span class="services__arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+          <li class="services__item" data-tags="Vedação eléctrica|Câmaras de vigilância|Motores de portão">
+            <a class="services__link" href="#contacto">
+              <span class="services__num">03</span>
+              <span class="services__body">
+                <span class="services__name">Segurança &amp; automação</span>
+                <span class="services__meta">Vedação eléctrica, câmaras de vigilância e motores de portão</span>
+              </span>
+              <span class="services__arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+          <li class="services__item" data-tags="Estratégia tecnológica|Optimização de processos|Apoio à decisão">
+            <a class="services__link" href="#contacto">
+              <span class="services__num">04</span>
+              <span class="services__body">
+                <span class="services__name">Consultoria em TI</span>
+                <span class="services__meta">Estratégia tecnológica e optimização de processos de negócio</span>
+              </span>
+              <span class="services__arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+          <li class="services__item" data-tags="Websites empresariais|E-commerce|Blogs responsivos">
+            <a class="services__link" href="#contacto">
+              <span class="services__num">05</span>
+              <span class="services__body">
+                <span class="services__name">Desenvolvimento web</span>
+                <span class="services__meta">Websites empresariais, e-commerce e blogs responsivos</span>
+              </span>
+              <span class="services__arrow" aria-hidden="true">&#8599;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="services__right">
+        <div class="services__panel" id="servicesPanel" aria-live="polite">
+          <span class="services__panel-ghost" id="servicesPanelGhost" aria-hidden="true">01</span>
+          <p class="services__panel-kicker"><span id="servicesPanelNum">01</span><span>/ 05</span></p>
+          <div class="services__panel-swap" id="servicesPanelSwap">
+            <p class="services__panel-name" id="servicesPanelName">Desenvolvimento de software</p>
+            <ul class="services__panel-tags" id="servicesPanelTags">
+              <li>Sistemas de gestão</li>
+              <li>Aplicativos mobile</li>
+              <li>Soluções sob medida</li>
+            </ul>
+          </div>
+          <a class="services__panel-cta" href="#contacto">Falar connosco <i aria-hidden="true">&#8599;</i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="empresa" aria-labelledby="aboutTitle">
+      <div class="about__rail">
+        <p class="about__label">(Sobre nós)</p>
+      </div>
+      <div class="about__body">
+        <h2 class="about__title" id="aboutTitle">Unitech Solution, em poucas palavras</h2>
+        <p class="about__lead" data-reveal>
+          A Unitech Solution é uma empresa de tecnologia moçambicana que oferece soluções completas para o seu negócio,
+          com foco em Machine Learning e Inteligência Artificial.
+          Do software ao terreno — redes, segurança física e consultoria incluídas — ajudamos a sua empresa a alcançar
+          os seus objectivos com um único parceiro de confiança.
+          Inovação, qualidade e compromisso, em cada projecto.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact__grid">
+        <div class="contact__intro">
+          <p class="contact__avail">
+            <span class="contact__avail-dot" aria-hidden="true"></span>Disponíveis para novos projectos
+          </p>
+          <p class="contact__hook">Tem um projecto em mente?</p>
+          <a class="contact__mail" href="mailto:comercial@unitechsolution.co.mz">comercial@unitechsolution.co.mz</a>
+          <p class="contact__sub">Conte-nos sobre o seu projecto. A nossa equipa entra em contacto consigo brevemente.
+          </p>
+        </div>
+        <form class="cform" id="contactForm" novalidate>
+          <div class="cform__head">
+            <p class="cform__count"><span id="cfStepNow">01</span><em>/ 03</em></p>
+            <p class="cform__steplabel" id="cfStepLabel">Quem é você?</p>
+          </div>
+          <div class="cform__steps">
+            <fieldset class="cform__step is-active" data-step="1" data-label="Quem é você?">
+              <legend class="sr-only">Os seus contactos</legend>
+              <div class="cform__field"><label for="cfName">Nome completo</label><input id="cfName" name="name"
+                  type="text" autocomplete="name" placeholder="Nome Apelido" required></div>
+              <div class="cform__field"><label for="cfEmail">Email</label><input id="cfEmail" name="email" type="email"
+                  autocomplete="email" placeholder="nome@empresa.co.mz" required></div>
+              <div class="cform__field"><label for="cfPhone">Telefone</label><input id="cfPhone" name="phone" type="tel"
+                  autocomplete="tel" placeholder="+258 84 000 0000"></div>
+            </fieldset>
+            <fieldset class="cform__step" data-step="2" data-label="O projecto">
+              <legend class="sr-only">Área e dimensão do projecto</legend>
+              <div class="cform__group">
+                <p class="cform__grouplabel">Trata-se de...</p>
+                <div class="cform__pills" role="radiogroup">
+                  <label class="cform__choice"><input type="radio" name="area" value="Software"
+                      required><span>Software</span></label>
+                  <label class="cform__choice"><input type="radio" name="area" value="Redes e Seguranca"><span>Redes
+                      &amp; Segurança</span></label>
+                  <label class="cform__choice"><input type="radio" name="area"
+                      value="Consultoria"><span>Consultoria</span></label>
+                  <label class="cform__choice"><input type="radio" name="area" value="Outro"><span>Outro</span></label>
+                </div>
+              </div>
+              <div class="cform__group">
+                <p class="cform__grouplabel">Dimensão do projecto <em>&#183; facultativo</em></p>
+                <div class="cform__pills" role="radiogroup">
+                  <label class="cform__choice"><input type="radio" name="dimensao"
+                      value="Pequeno"><span>Pequeno</span></label>
+                  <label class="cform__choice"><input type="radio" name="dimensao"
+                      value="Medio"><span>Médio</span></label>
+                  <label class="cform__choice"><input type="radio" name="dimensao"
+                      value="Grande"><span>Grande</span></label>
+                  <label class="cform__choice"><input type="radio" name="dimensao" value="Ainda nao sei"><span>Ainda não
+                      sei</span></label>
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="cform__step" data-step="3" data-label="Fale-nos mais">
+              <legend class="sr-only">A sua mensagem</legend>
+              <div class="cform__field"><label for="cfMsg">O seu projecto em poucas linhas</label><textarea id="cfMsg"
+                  name="message" rows="5" placeholder="Contexto, objectivos, prazos..." required></textarea></div>
+              <div class="cform__consent">
+                <label class="cform__choice cform__choice--check"><input id="cfConsent" type="checkbox" name="consent"
+                    required><span>Aceito que os meus dados sejam utilizados para responder ao meu
+                    pedido.</span></label>
+                <p class="cform__consent-note">Dados tratados de acordo com a nossa política de privacidade.</p>
+              </div>
+            </fieldset>
+          </div>
+          <div class="cform__done" id="cfDone">
+            <span class="cform__done-mark" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1" opacity=".35" />
+                <path d="M15 24.5 L21.5 31 L33.5 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </span>
+            <h3 class="cform__done-title">Recebido.</h3>
+            <p class="cform__done-text">Mensagem enviada. Entraremos em contacto consigo brevemente.</p>
+          </div>
+          <div class="cform__nav">
+            <button class="cform__back" type="button" id="cfBack" hidden>Voltar</button>
+            <button class="cform__submit" type="submit" id="cfNext"><span class="nav__cta-dot"></span><span
+                id="cfNextLabel">Continuar</span></button>
+          </div>
+          <div class="cform__progress" aria-hidden="true"><span class="cform__progress-bar" id="cfProgress"></span>
+          </div>
+          <p class="cform__note" id="cfNote" role="status">Entraremos em contacto o mais brevemente possível.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img class="footer__brand-logo" src="assets/img/logo.png" alt="Unitech Solution">
+        <p>Soluções tecnológicas completas.<br>Software, redes, segurança &amp; consultoria.</p>
+      </div>
+      <nav class="footer__col" aria-label="Navegação de rodapé">
+        <p class="footer__col-title">Menu</p>
+        <a href="#projetos">Projectos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <nav class="footer__col">
+        <p class="footer__col-title">Contacto rápido</p>
+        <a href="https://wa.me/258848776057" rel="noopener" target="_blank">WhatsApp</a>
+        <a href="tel:+258848776057">+258 84 877 6057</a>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__col-title">Contacto</p>
+        <a href="mailto:comercial@unitechsolution.co.mz">comercial@unitechsolution.co.mz</a>
+        <p>Av. Malhangalene Q5, Maputo, Moçambique</p>
+      </div>
+    </div>
+    <div class="footer__meta">
+      <p>&#169;2026 Unitech Solution</p>
+      <nav class="footer__legal" aria-label="Informações legais">
+        <a href="#">Termos e condições</a>
+        <a href="#">Política de privacidade</a>
+      </nav>
+      <p>Todos os direitos reservados</p>
+    </div>
+    <div class="footer__wordmark" aria-hidden="true">
+      <img class="footer__logo" src="assets/img/logo.png" alt="">
+      <span class="footer__giant">uni<em>tech</em></span>
+      <span class="footer__giant-sub">solution</span>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.11/dist/lenis.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
